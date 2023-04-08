@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <style>
+    .background {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./background.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  </style>
+  <body>
+    <div class="background w-screen h-screen">
+      <div
+        class="bg-white rounded-lg p-6 w-[70vw] md:w-[25vw] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <div class="flex justify-end">
+          <img
+            src="https://img.icons8.com/ios/50/null/multiply.png"
+            class="w-7 h-7 cursor-pointer"
+          />
+        </div>
+        <h1 class="text-center font-semibold text-2xl pb-8">login</h1>
+        <form class="space-y-9">
+          <div class="flex space-x-2 items-center border-b-2 border-slate-300">
+            <img
+              src="https://img.icons8.com/windows/32/null/read-message--v2.png"
+              class="w-6 h-6"
+            />
+            <input
+              id="email"
+              type="text"
+              class="outline-none p-2 w-[70vw] md:w-[50vw]"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div class="flex space-x-2 items-center border-b-2 border-slate-300">
+            <img
+              src="https://img.icons8.com/material/24/null/padlock-outline.png"
+              class="w-6 h-6"
+            />
+            <input
+              id="pass"
+              type="text"
+              class="outline-none p-2 w-[70vw] md:w-[50vw]"
+              placeholder="Enter your Password"
+            />
+          </div>
+          <div class="flexn justify-center items-center">
+            <button
+              class="bg-violet-600 text-white w-[60vw] md:w-[22vw] p-2 rounded-md font-semibold"
+            >
+              Login Now
+            </button>
+            <p class="text-center py-5 text-sm">
+              Don't have an account?
+              <span class="text-violet-500 font-bold">SignUp</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
