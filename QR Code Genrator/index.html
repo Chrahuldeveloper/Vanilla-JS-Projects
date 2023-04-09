@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-blue-500 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+  >
+    <div
+      class="bg-white w-[70vw] md:w-[30vw] p-6 rounded-xl shadow-lg space-y-4 flex flex-col justify-center"
+    >
+      <h1 class="text-2xl font-semibold">Qr code Generator</h1>
+      <p class="my-2">Enter QR Code link</p>
+      <input
+        id="inputvalue"
+        type="text"
+        class="outline-none border-2 border-slate-300 p-2.5"
+      />
+      <button
+        id="btn"
+        class="bg-sky-500 font-semibold p-2.5 text-white text-lg"
+      >
+        Generate
+      </button>
+      <hr />
+      <img
+        src=""
+        id="qrcode"
+        alt=""
+        class="hidden max-w-[50vw] md:max-w-[15vw] mx-auto"
+      />
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
