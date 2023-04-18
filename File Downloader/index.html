@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FileDownloader</title>
+  </head>
+  <body class="w-screen h-screen bg-blue-500">
+    <div
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+    >
+      <div
+        class="bg-white p-7 w-[70vw] md:max-w-[30vw] space-y-3 flex flex-col justify-center shadow-xl rounded-xl"
+      >
+        <h1 class="text-2xl font-semibold">FileDownloader</h1>
+        <p class="text-s">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero
+        </p>
+        <input
+          type="text"
+          id="inputurl"
+          placeholder="URL"
+          class="border-2 border-gray-300 outline-none p-3.5"
+        />
+        <button
+        id="btn"
+          class="bg-blue-500 text-white py-3 font-semibold hover:brightness-90 ease-in-out duration-300"
+        >
+          Download
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
